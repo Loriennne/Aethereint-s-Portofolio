@@ -5,7 +5,7 @@ body {
   margin: 0; font-family: Arial, Helvetica, sans-serif;
   background: #f1f5f9; color: #1e293b; line-height: 1.6;
 }
-.site-header { background: linear-gradient(135deg, lab(28.53% 62.23 -62.16), lch(89.21% 92.09 114.96)); color: white; padding: 0 7%; }
+.site-header { background-image: url('spiderman.jpg'); color: white; padding: 0 7%; }
 .navbar {
   max-width: 1100px; margin: auto; min-height: 72px;
   display: flex; justify-content: space-between; align-items: center; gap: 20px;
