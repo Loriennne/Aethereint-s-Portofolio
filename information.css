@@ -30,7 +30,7 @@ body {
 .project-card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(15, 23, 42, .12); }
 .project-visual { min-height: 145px; display: flex; justify-content: center; align-items: center; }
 .project-visual span { font-size: 55px; }
-.visual-blue { background: #dbeafe; }
+.visual-blue { background-image: url('spiderman1.jpg'); }
 .visual-green { background: #dcfce7; }
 .visual-purple { background: #ede9fe; }
 .visual-orange { background: #ffedd5; }
