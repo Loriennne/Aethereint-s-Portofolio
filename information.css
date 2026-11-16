@@ -31,7 +31,7 @@ body {
 .project-visual { min-height: 145px; display: flex; justify-content: center; align-items: center; }
 .project-visual span { font-size: 55px; }
 .visual-blue { background-image: url('spiderman1.jpg'); }
-.visual-green { background: #dcfce7; }
+.visual-green { background-image: url('spiderman2.jpg');}
 .visual-purple { background: #ede9fe; }
 .visual-orange { background: #ffedd5; }
 .visual-pink { background: #fce7f3; }
