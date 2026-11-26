@@ -16,7 +16,7 @@
   
     <!-- Bagian Header -->
     <header style="
-      background-image: url('header2.jpg') ;
+      background-image: url('star.gif') ;
         background-color: #000000;
         color: white;
         text-align: center;
@@ -241,7 +241,7 @@ function previousImage() {
     transform: translateY(-115px);
 
     /* BACKGROUND IMAGE */
-    background-image: url('mbg.jpg');
+    background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ function previousImage() {
                 border-radius: 10px;
             "></div>
         </div>
-        <p style="font-size: 13px; color: #000000;">
+        <p style="font-size: 13px; color: #e04c06;">
             90%
         </p>
     </div>
@@ -316,7 +316,7 @@ function previousImage() {
     transform: translateY(-115px);
 
     /* BACKGROUND IMAGE */
-    background-image: url('pbg.jpg');
+    background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -362,7 +362,7 @@ function previousImage() {
                 border-radius: 10px;
             "></div>
         </div>
-        <p style="font-size: 13px; color: #000000;">
+        <p style="font-size: 13px; color: #f0f700;">
             95%
         </p>
     </div>
@@ -389,7 +389,7 @@ function previousImage() {
     transform: translateY(-115px);
 
     /* BACKGROUND IMAGE */
-    background-image: url('ibg.jpg');
+    background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -462,13 +462,13 @@ function previousImage() {
     transform: translateY(-115px);
 
     /* BACKGROUND IMAGE */
-   background-image: url('latarbelakangbio.jpg');
+   background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     /* BORDER */
-    border: 3px solid hwb(225 20% 65%);
+    border: 3px solid hwb(0 77% 19%);
     border-radius: 15px;
     color: white;
     font-size: 18px;
@@ -487,7 +487,7 @@ function previousImage() {
     " viewBox="0 0 25 45">
 
         <path d="M 24,3 L 2,22 L 23,42"
-              fill="hwb(225 20% 65%)"
+              fill="hwb(0 77% 19%)"
           
               stroke=hwb(225 20% 65%)
               stroke-width="3"/>
@@ -506,7 +506,7 @@ function previousImage() {
                 height: 10px;
                 border-radius: 10px;
             "></div>
-        <div>
+        </div>
         <p style="font-size: 13px; color: #00FF00;">
             90%
         </p>
@@ -517,11 +517,137 @@ function previousImage() {
 
 
 
-<  
-
     <section style="
     Background-color : #ffffff" ;
-   
+   <br><hr><br><hr>
+
+<div style="
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;">
+      
+    <!-- BAGIAN PROFIL (KIRI) -->
+    <div style="
+        width: 60%;
+        flex: 1;"> 
+    </div>
+
+    <!-- BAGIAN GALERI (KANAN) -->
+    <div style="
+        width: 35%;
+        flex-shrink: 0;
+        position: relative;">
+
+        <img id="galleryImage"
+             src="hanako.gif"
+             alt="Documentation"
+             style="
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 15px;
+                display: block;">
+
+        
+
+       
+        <p id="imageNumber" style="text-align: center;">
+          Hanako Kun
+        </p>
+
+        </div>
+
+        </div>
+
+
+<script>
+const images = [
+    "piagam1.jpg",
+    "piagam2.jpg",
+    "piagam3.jpg",
+    "piagam4.jpg",
+];
+
+let currentImage = 0;
+
+function showImage() {
+    document.getElementById("galleryImage").src =
+        images[currentImage];
+
+    document.getElementById("imageNumber").textContent =
+        (currentImage + 1) + " / " + images.length;
+}
+
+function nextImage() {
+    currentImage++;
+
+    if (currentImage >= images.length) {
+        currentImage = 0;
+    }
+
+    showImage();
+}
+
+function previousImage() {
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = images.length - 1;
+    }
+
+    showImage();
+}
+</script>
+
+<!-- PROFIL FLEXBOX -->
+<section style="
+    display: flex;
+    align-items: left;
+    gap: 25px;
+    padding: 30px;
+  max-width: 400px;
+  height: 240px;
+    margin: -375px 0 10px 20px;
+    background-image: url('projek12.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    color: hwb(0 30% 19%);
+">
+
+    
+
+    <!-- CONTAINER TEKS -->
+    <div style="
+        flex: 1;
+        min-width: 0;
+    ">
+
+        <h2 style="
+            color: white;
+            margin-top: 0;
+        ">
+            Davind Chrystian Bong
+        </h2>
+
+    </div>
+
+</section>
+<br><hr><br><hr><br
+
+ <img
+    src="projektit.png"
+    alt="Foto profil"
+    style="
+          width: 350px;
+          height: 85px;
+          padding: 30px;
+          border-radius: 70px;">
+  <br>     
+      
 <!-- Bagian Proyek dan Karya Saya -->
 <section style="
     background-image: url('Hanako1.jpg');
@@ -533,30 +659,15 @@ function previousImage() {
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 ">
 
-    <h2 style="
-        color: 0000;
-        text-align: left;
-        margin-top: 0;
-    ">
-        Proyek dan Karya Saya
-    </h2>
-
-    <p style="
-        color: #64748b;
-        text-align: center;
-        line-height: 1.6;
-    ">
-        Berikut beberapa proyek dan karya yang saya
-        kerjakan selama belajar di SMA.
-    </p>
+   <
 
     <!-- Proyek 1 -->
     <div style="
-        background-color: #eff6ff;
+        background-image : url('glitch.gif');
         padding: 18px;
         margin: 18px 0;
         border-radius: 10px;
-        border-left: 5px solid #2563eb;
+        border-left: 5px solid #ffffff;
     ">
         <p style="
             color: #2563eb;
@@ -567,15 +678,17 @@ function previousImage() {
             INFORMATIKA
         </p>
 
-        <h3>Website Portofolio Pribadi</h3>
+        <h3 style="color: #ffffff";
+          Website Portofolio Pribadi</h3>
 
-        <p style="line-height: 1.7;">
+        <p style="line-height: 1.7;
+          color : #ffffff;">
             Membuat website yang menampilkan bagaimana sebuah
             rangkaian arduino dapat bekerja untuk menyalakan
             sebuah lampu yang lebih dari 1
         </p>
 
-        <p style="font-size: 13px; color: #475569;">
+        <p style="font-size: 13px; color: #ffffff;">
             Kemampuan: HTML, CSS, desain web.
         </p>
 
